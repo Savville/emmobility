@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBatteryHalf, FaClock, FaMapMarkedAlt, FaListUl } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from "framer-motion";
 import "react-map-gl";
 import Map from "react-map-gl";
@@ -92,7 +93,7 @@ const BikeRentalInterface = () => {
   );
 
   const MapView = () => (
-    <div className="h-[600px] w-full rounded-lg overflow-hidden">
+    <div className="h-[600px] w-full rounded-lg overflow-hidden">      
       <Map
         initialViewState={{
           longitude: -74.006,

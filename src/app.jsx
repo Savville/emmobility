@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import { FaBicycle, FaMapMarkerAlt, FaClock, FaStar } from "react-icons/fa";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
@@ -14,7 +15,7 @@ const BicycleRentingApp = () => {
           </div>
           <nav className="hidden md:flex space-x-6">
             <a href="#" className="text-gray-600 hover:text-green-500">Home</a>
-            <a href="#" className="text-gray-600 hover:text-green-500">Rent a Bike</a>
+            <a href="#" className="text-gray-600 hover:text-green-500"><Link to="/bike">Rent a bike</Link></a>
             <a href="#" className="text-gray-600 hover:text-green-500">About Us</a>
             <a href="#" className="text-gray-600 hover:text-green-500">Contact</a>
           </nav>
